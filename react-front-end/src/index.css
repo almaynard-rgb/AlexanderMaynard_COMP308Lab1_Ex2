@@ -1,0 +1,24 @@
+/*
+Alexander Maynard 301170707
+//February 3rd, 2025
+//Comp308, Lab Assignment 1
+*/
+
+/* 
+    This file is used to define the global styles for the application. 
+    These styles were used in reference to the COMP308 course example.
+*/
+
+body, html {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

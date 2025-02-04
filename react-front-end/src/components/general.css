@@ -1,0 +1,29 @@
+/*
+Alexander Maynard 301170707
+February 3rd, 2025
+Comp308, Lab Assignment 1 
+*/
+
+/*general.css*/
+
+/*General styles*/
+body, html {
+  height: 100%;
+  margin: 0;
+}
+/*Form styles*/
+form {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    width: 50%
+  }
+  
+  /*container styles*/
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+  } 
