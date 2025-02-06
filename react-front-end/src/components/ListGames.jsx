@@ -25,7 +25,7 @@ function ListGames() {
     const [username, setUsername] = useState(null); // state for the username
     const [gameSearch, setGameSearch] = useState(''); // state for the game search
 
-    // Reference: this is a modified version from the example given by the COMP308 course examples
+    // Reference: this was contructed by referencing the examples given by the COMP308 course examples
     // It has been modified to fit the requirements of the assignment
     // function to check if the user is logged in
     const isLoggedIn = async () => {

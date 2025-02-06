@@ -24,7 +24,7 @@ function UserGamesCollection(props) {
   const [games, setGames] = useState([]); // state for the games
   const [username, setUsername] = useState(null); // state for the username
 
-  // Reference: this is a modified version from the example given by the COMP308 course examples
+  // Reference: this was contructed by referencing the examples given by the COMP308 course
   // It has been modified to fit the requirements of the assignment
   // function to check if the user is logged in
   const isLoggedIn = async () => {
@@ -67,18 +67,20 @@ function UserGamesCollection(props) {
     }
   }, [username]); //load this wehn the username changes
 
-  
+  //this was contructed by referencing the examples given by Copilot on 2025-02-02 --> it has been modified to fit the requirements of the assignment
   //function to remove a game from the user's collection (from the user.games subcollection)
   const removeGame = async (gameId) => { //takes the gameId as a parameter
     try {
       //send a delete request to the backend to remove the game from the user's collection
       await axios.delete(`http://localhost:3000/api/remove_user_game/${username}/${gameId}`); //send the username and gameId to the backend as parameters
+      //set the games to the games that do not have the gameId that was removed
       setGames(games.filter(game => game._id !== gameId)); //set the games to the games that do not have the gameId
     } catch (error) { //if there is an error, log the error
       console.log('error in removeGame', error); //log the error
     }
   };
 
+  
   // return the JSX for the ListGames component
   return (
     <div className="bg-dark bg-gradient vh-100 text-white pt-4 ">

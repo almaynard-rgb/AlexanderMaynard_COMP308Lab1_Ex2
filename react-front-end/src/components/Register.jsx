@@ -22,7 +22,7 @@ function Register() {
   const navigate = useNavigate(); //used to navigate to different pages
 
 
-  // Reference: this is a modified version from the example given by the COMP308 course examples
+  // Reference: this was contructed by referencing the examples given by the COMP308 course
   // It has been modified to fit the requirements of the assignment
   // function to register the user
   const handleSubmit = async (e) => {
@@ -58,7 +58,7 @@ function Register() {
   };
 
 
-  // Reference: this is a modified version from the example given by the COMP308 course examples
+  // Reference: this was contructed by referencing the examples given by the COMP308 course
   // It has been modified to fit the requirements of the assignment
   // function to check if the user is logged in already
   const isLoggedIn = async () => {

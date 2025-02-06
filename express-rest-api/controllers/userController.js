@@ -10,7 +10,7 @@ const jwtExpirySeconds = 31536000; // 31536000 seconds = 1 years
 const config = require('../config'); // Adjust the path as necessary
 const jwtKey = config.secretKey; // Replace with your actual secret key
 
-// Reference: loginUser is a modified version from the COMP308 course examples
+// Reference: this was contructed by referencing the examples from the COMP308 course examples
 // get a user from the database by username and password and store it in the session cookies
 const loginUser = async (req, res) => {
   //get the username and password from the request body
@@ -41,6 +41,7 @@ const loginUser = async (req, res) => {
   }
 };
 
+
 //logout existing user from the session by clearing the cookie
 const logoutUser = async (req, res ) => {
   res.clearCookie('token');
@@ -50,7 +51,7 @@ const logoutUser = async (req, res ) => {
 
 //register a new user to the database
 const registerUser = async (req, res) => {
-  //const { username, password } = req.body.auth;
+  //get the username/pass from the req.body
   const username = req.body.username;
   const password = req.body.password;
   try {
@@ -73,7 +74,8 @@ const registerUser = async (req, res) => {
   }
 };
 
-// Reference: this is a modified version from the example given by Github copilot on 2025-02-02 and the COMP308 course examples
+
+// Reference: this was contructed by referencing examples given by Github copilot on 2025-02-02 and the COMP308 course examples
 //It has been modified to fit the requirements of the assignment
 //get the games for a specific user in the user's collection
 const getUsersGames = async (req, res) => {
@@ -92,7 +94,8 @@ const getUsersGames = async (req, res) => {
   }
 };
 
-// Reference: loginUser is a modified version from the COMP308 course examples --> 2025-02-02
+
+// Reference: this was contructed by referencing examples from the COMP308 course examples --> 2025-02-02
 // It has been greatly modified to fit the requirements of the assignment
 //add games to the user list of games
 const addGameToUserCollection = async (req, res) => {
@@ -120,7 +123,7 @@ const addGameToUserCollection = async (req, res) => {
   }
 };
 
-// Reference: loginUser is a modified version from the COMP308 course examples --> 2025-02-02
+// Reference: this was contructed by referencing the examples given from the COMP308 course examples --> 2025-02-02
 //It has been modified to fit the requirements of the assignment
 //check if the user is signed in
 const isSignedIn = (req, res) => {
@@ -144,6 +147,7 @@ const isSignedIn = (req, res) => {
   }
   res.status(200).send({screen: payload.username}); //send status and screen value if all goes well
 };
+
 
 //remove a game from the database in the user's collection
 const removeUserGame = async (req, res) => {
