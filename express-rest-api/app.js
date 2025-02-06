@@ -41,7 +41,7 @@ app.use(gameRoutes);
 
 
 // Reference: this is a modified version from the example/suggestion given by Github copilot on 2025-02-02 at 2:27pm 20/02/2025,
-// The data inserted has been modified to fit the requirements of the assignment
+// The data inserted and location to be inserted has been modified to fit the requirements of the assignment
 // Function to initialize game data 
 const initializeGameData = async () => {
   //NOTE: The descriptions are taken from Wikipedia for the associated games

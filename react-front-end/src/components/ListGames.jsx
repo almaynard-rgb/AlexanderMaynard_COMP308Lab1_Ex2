@@ -51,7 +51,7 @@ function ListGames() {
     // this function is responsible for adding the game to the user's game collection
     const handleAddingGameToCollection = async (gameId) => { // takes the gameId as a parameter
         try {
-            // send a post request to the backend to add the game to the user's collection    
+            // send a post request to the backend to add the game to the user's collection, 
             const request = await axios.post('http://localhost:3000/api/add_games', { username, gameId }); // send the username and gameId to the backend
             console.log(request.data); // log the data
         } catch (error) { // if there is an error, log the error and alert the user that the game is already in their collection

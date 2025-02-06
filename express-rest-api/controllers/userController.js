@@ -120,7 +120,7 @@ const addGameToUserCollection = async (req, res) => {
   }
 };
 
-// Reference: loginUser is a modified version from the COMP308 course examples
+// Reference: loginUser is a modified version from the COMP308 course examples --> 2025-02-02
 //It has been modified to fit the requirements of the assignment
 //check if the user is signed in
 const isSignedIn = (req, res) => {
